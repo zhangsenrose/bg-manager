@@ -34,5 +34,15 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <!--视图解析-->
+    <bean  id="viewResolver"
+           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+
+
 
 </beans>
